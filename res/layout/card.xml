@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:contentPadding="8dp"
+        card_view:cardBackgroundColor="@color/primary_bgr"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="4dp">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/articleLayout"
+                    android:background="@color/primary_bgr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:id="@+id/stgvImageView"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/stgvImageView"
+                android:layout_alignRight="@+id/stgvImageView"
+                android:gravity="center"
+                android:layout_alignBottom="@+id/stgvImageView"
+                android:layout_alignTop="@+id/stgvImageView"
+                android:textColor="@color/white"
+
+                android:textSize="20dp"
+                android:id="@+id/siteurl"
+                android:visibility="gone"/>
+        <View android:layout_width="match_parent" android:layout_height="68dp"
+              android:background="@drawable/main_adapter_tagbgr"
+              android:layout_alignRight="@+id/stgvImageView"
+              android:layout_alignTop="@+id/stgvImageView"
+              android:layout_alignLeft="@+id/stgvImageView"
+                />
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/stgvImageView"
+                      android:id="@+id/footer"
+                      android:orientation="vertical"
+                      android:paddingTop="16dp"
+                      android:paddingBottom="16dp"
+                      android:paddingLeft="6dp"
+                >
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:id="@+id/articleTitle"
+                      android:textAppearance="@android:style/TextAppearance.Medium"
+                      android:textColor="@drawable/main_adapter_textselector"
+                      android:textStyle="bold"
+                      android:layout_marginBottom="16dp"
+                      android:paddingRight="8dp"
+                      android:paddingLeft="0dp"/>
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                    >
+
+                <LinearLayout
+                        android:id="@+id/authorLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="false"
+                        android:clickable="true"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:baselineAligned="false"
+                        android:paddingRight="4dp"
+                        android:paddingLeft="0dp">
+                    <ImageView
+                            android:id="@+id/userAva"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="#f8f8f8" />
+
+                    <TextView
+                            android:id="@+id/userFullname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/gray_text"
+                            android:paddingLeft="8dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textAppearance="@android:style/TextAppearance.Small"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
