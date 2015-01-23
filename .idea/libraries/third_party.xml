@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="third-party">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/third-party/android-support-v7-cardview.jar!/" />
+      <root url="jar://$PROJECT_DIR$/third-party/android-support-v4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/third-party/android-support-v7-appcompat.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
